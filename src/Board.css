@@ -1,0 +1,191 @@
+.board{
+    position: relative;
+    /* left: 37%;
+    top: -88px; */
+}
+
+
+.oneMove{
+    border: 1px solid black;
+    display: inline-table;
+    height: 68px;
+    width: 72px;
+    text-align: center;
+
+}
+
+.cube{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 56px;
+    right: -798px;
+    display: block;
+}
+
+.playerOne{
+    width: 46px;
+    height: 41px;
+    position: relative;
+    right: 30px;
+}
+
+
+
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 31px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 250px;
+    
+    top: 316px;
+    height: 100px;
+    position: relative;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+body
+ {
+  
+  font-family: 'Helvetica', sans-serif;
+  background: rgb(26, 188, 156);
+  background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+}
+
+.winDiv{
+    background-image:url('../public/Pic/stars-1904262_1920.png');
+    background-size: 100%;
+    z-index: 4;
+    background-color: antiquewhite;
+    width: 785px;
+    height: 667px;
+    position: fixed;
+    top: 98px;
+    left: 32%;
+    border-radius: 20px;
+}
+
+
+.winDiv b{
+    position: relative;
+    font-size: 40px;
+    
+    top: 50px;
+   
+}
+
+.WinCup{
+    position: relative;
+    left: 226px;
+    top: 10px;
+    height: 150px;
+    width: 150px;
+    
+}
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 98px;
+    position: relative;
+    top: 267px;
+    left: -245px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); }
+}
+
+.ladder{
+    display: inline-table;
+}
+.ladder img{
+    
+    z-index: 3;
+    display: initial;
+    position: relative;
+}
+
+
+
+
+
+.cube {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+ 
+  
+  cube {
+
+    position: absolute;
+    left: calc(50% - 3em);
+    top: calc(50% - 2em);
+    
+    height: 4em;
+    width: 7em;
+    
+    background: #444;
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 3px solid orange;
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+  }
+
+
+
+
